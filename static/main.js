@@ -9,7 +9,13 @@ $(function () {
                 chart: {
                     type: 'line',
                 },
+                credits: {
+                    enabled: false,
+                },
                 series: data,
+                title: {
+                    text: 'Measures',
+                },
                 xAxis: {
                     type: 'datetime'
                 },
@@ -18,7 +24,7 @@ $(function () {
                         min: 0,
                     },
                     {
-                        oppsite: true,
+                        opposite: true,
                         title: {
                             text: 'Percent',
                         },

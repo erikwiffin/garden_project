@@ -70,8 +70,8 @@ def record():
     try:
         air_temp_c = air_sensor.temperature
         air_humidity = air_sensor.humidity
-        soil_humidity = soil_sensor.value
-        light = light_sensor.value
+        soil_humidity = round(soil_sensor.value, 2)
+        light = round(abs(light_sensor.value - 1), 2)
 
         click.echo('-' * 20)
         click.echo(datetime.now().isoformat())
