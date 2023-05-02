@@ -7,7 +7,7 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-flask = "^1.1.1"
+flask = "^2.2.5"
 gpiozero = "^1.5.1"
 board = "^1.0"
 adafruit-circuitpython-dht = "^3.2.6"
